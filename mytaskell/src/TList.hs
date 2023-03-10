@@ -1,4 +1,4 @@
-module TList (runTaskManager) where
+module TList (start) where
 
 import Test.HUnit
 import Task (Task (..), TaskList)
