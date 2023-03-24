@@ -17,13 +17,13 @@ testprioritySort =
     ~: TestList
       [ prioritySort [] ~?= [],
         prioritySort
-          [ Task "homework" "any" 4 "03/03/2023",
-            Task "garbage" "out" 8 "03/04/2023",
-            Task "project" "test" 2 "03/28/2023"
+          [ Task "homework" "any" 4 "03/03/2023" False,
+            Task "garbage" "out" 8 "03/04/2023" False,
+            Task "project" "test" 2 "03/28/2023" False 
           ]
-          ~?= [ Task "garbage" "out" 8 "03/04/2023",
-                Task "homework" "any" 4 "03/03/2023",
-                Task "project" "test" 2 "03/28/2023"
+          ~?= [ Task "garbage" "out" 8 "03/04/2023" False,
+                Task "homework" "any" 4 "03/03/2023" False,
+                Task "project" "test" 2 "03/28/2023" False
               ]
       ]
 
@@ -41,11 +41,11 @@ testpriorityHigh =
     ~: TestList
       [ priorityHigh [] ~?= [],
         priorityHigh
-          [ Task "homework" "any" 4 "03/03/2023",
-            Task "garbage" "out" 8 "03/04/2023",
-            Task "project" "test" 2 "03/28/2023"
+          [ Task "homework" "any" 4 "03/03/2023" False,
+            Task "garbage" "out" 8 "03/04/2023" False,
+            Task "project" "test" 2 "03/28/2023" False
           ]
-          ~?= [ Task "garbage" "out" 8 "03/04/2023"]
+          ~?= [ Task "garbage" "out" 8 "03/04/2023" False]
       ]
 
 -- (Unimplemneted) priority filter
@@ -61,13 +61,13 @@ testpriorityFilter =
     ~: TestList
       [ priorityFilter 4 [] ~?= [],
         priorityFilter
-          8 [ Task "homework" "any" 4 "03/03/2023",
-            Task "garbage" "out" 8 "03/04/2023",
-            Task "project" "test" 2 "03/28/2023"
+          8 [ Task "homework" "any" 4 "03/03/2023" False,
+            Task "garbage" "out" 8 "03/04/2023" False,
+            Task "project" "test" 2 "03/28/2023" False
           ]
-          ~?= [ Task "garbage" "out" 8 "03/04/2023"],
+          ~?= [ Task "garbage" "out" 8 "03/04/2023" False],
 
-          priorityFilter 5 [Task "Gym" "Legs day" 5 "04/25/2023"] ~?= [Task "Gym" "Legs day" 5 "04/25/2023"]
+          priorityFilter 5 [Task "Gym" "Legs day" 5 "04/25/2023" False] ~?= [Task "Gym" "Legs day" 5 "04/25/2023" False]
       ]
 
 

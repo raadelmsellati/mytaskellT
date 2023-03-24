@@ -4,7 +4,8 @@ data Task = Task
   { tName :: String,
     tDesc :: String,
     tPrio :: Int,
-    dueDate :: String
+    dueDate :: String,
+    completed :: Bool
   }
   deriving (Eq, Show)
 
