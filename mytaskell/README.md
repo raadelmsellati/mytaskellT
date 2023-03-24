@@ -1,5 +1,9 @@
 # MyTASKELL
 
+<p align="center">
+  <img src="imageedit_15_5097756375.png"/>
+</p> 
+
 MyTaskell, is a command-line tool works as a task manager enables users to manage their 
 to-do lists and tasks. Users can see their tasks by several criteria, such as due date or priority, and 
 add, change, and delete tasks as needed. This program is written in Haskell and The Stack tool.
