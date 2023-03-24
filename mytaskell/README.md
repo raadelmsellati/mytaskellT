@@ -33,5 +33,5 @@ task manager to store task data, and it will be written in Haskell.
          * Main:
    Responsible for kicking off the program and start the testing process quitting the program using Test.HUnit library.
 
-#Testing
+# Testing
 Testing method used for thie porgram is via Test.HUnit. It is used by implementing test function version for some main functions in the program. For example, prioritySort would have a function "testPrioritySort" with test cases within that function.
