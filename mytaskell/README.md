@@ -16,8 +16,8 @@ add, change, and delete tasks as needed. This program is written in Haskell and 
 # How to use?
    first:
    
-      * stack build
-      * stack run
+      stack build
+      stack run
    
    You will have a basic interface with different options that you can use.
    
@@ -31,6 +31,10 @@ add, change, and delete tasks as needed. This program is written in Haskell and 
       * -count (Get total number of existed tasks)
       * -mark (mark as finished)
       * -quit
+      
+   After 'quit' the program will output the test cases with their results using Test.HUnit.
+   
+      for example: Cases: 7  Tried: 7  Errors: 0  Failures: 0
 
 
 ## Source Code:
