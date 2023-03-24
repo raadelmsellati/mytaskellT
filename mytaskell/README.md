@@ -59,4 +59,4 @@ add, change, and delete tasks as needed. This program is written in Haskell and 
 # Testing
 Testing method used for thie porgram is via Test.HUnit. It is used by implementing test function version for some main functions in the program. For example, prioritySort would have a function "testPrioritySort" with test cases within that function.
 
-C: raadElmsellati
+- Credits: <a href="https://github.com/raadelmsellati" target="blank"> raadelmsellati </a>
