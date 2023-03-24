@@ -26,11 +26,11 @@ task manager to store task data, and it will be written in Haskell.
    Basically, this module is the core module for the basic operations such as add task, modify, remove, and display tasks. 
    This module also is imported by other modules such as main because it has the menu loop and the start function of the program.
         
-        *PerF:
+        * PerF:
    This module is responsible for holding user preference functions. These include functions such as count all tasks, get the highest priority task, sort by tasks by priority, etc. 
    Task module is imported in this module to deal with data types. 
     
-         *Main:
+         * Main:
    Responsible for kicking off the program and start the testing process quitting the program using Test.HUnit library.
 
     
