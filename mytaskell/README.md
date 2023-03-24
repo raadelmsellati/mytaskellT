@@ -13,5 +13,24 @@ task manager to store task data, and it will be written in Haskell.
     * Users can sort the tasks in their list by priority, Low TO High.
     * Users are able to filter their list of tasks by a specific prioirty. If prio = 8, then view only all the tasks with 8 prio.
     * Users can label their task as finished after it is done.
+   
+## Source Code:
+   # Modules:
+   The modules till the current moment of developing MyTaskell are about 4 modules and all of them depend on each other. So far I have the modules: Task, TList, PerF, and Main.
+   
+      * Task:
+   This module is responsible of holding the data types of the program such as Task and TaskList. All of the other modules are required to import this module to deal with the data types needed.
     
+      * TList:
+   
+   Basically, this module is the core module for the basic operations such as add task, modify, remove, and display tasks. 
+   This module also is imported by other modules such as main because it has the menu loop and the start function of the program.
+        
+        *PerF:
+   This module is responsible for holding user preference functions. These include functions such as count all tasks, get the highest priority task, sort by tasks by priority, etc. 
+   Task module is imported in this module to deal with data types. 
+    
+         *Main:
+   Responsible for kicking off the program and start the testing process quitting the program using Test.HUnit library.
+
     
