@@ -2,8 +2,7 @@
 
 MyTaskell, is a command-line tool works as a task manager enables users to manage their 
 to-do lists and tasks. Users can see their tasks by several criteria, such as due date or priority, and 
-add, change, and delete tasks as needed. A straightforward file-based database will be used by the 
-task manager to store task data, and it will be written in Haskell.
+add, change, and delete tasks as needed. This program is written in Haskell and The Stack tool.
 
 # Features:
     * A command-line interface will be used by MyTaskell's user interface, which will consist of a number of menus and prompts.
@@ -13,7 +12,27 @@ task manager to store task data, and it will be written in Haskell.
     * Users can sort the tasks in their list by priority, Low TO High.
     * Users are able to filter their list of tasks by a specific prioirty. If prio = 8, then view only all the tasks with 8 prio.
     * Users can label their task as finished after it is done.
+
+# How to use?
+   first:
    
+      * stack build
+      * stack run
+   
+   You will have a basic interface with different options that you can use.
+   
+      * -add (Add a new task)
+      * -edit (Edit an existed task)
+      * -remove (Remove an existed task)
+      * -view (Display existed tasks)
+      * -high (Get the the most important task 'recent added')
+      * -sort (Sort tasks by priority Low To High)
+      * -priority (Filter tasks by priority)
+      * -count (Get total number of existed tasks)
+      * -mark (mark as finished)
+      * -quit
+
+
 ## Source Code:
    # Modules:
    The modules till the current moment of developing MyTaskell are about 4 modules and all of them depend on each other. So far I have the modules: Task, TList, PerF, and Main.
