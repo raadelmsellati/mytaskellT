@@ -1,7 +1,7 @@
 # MyTASKELL
 
 <p align="center">
-  <img src="imageedit_15_5097756375.png"/>
+  <img src="mytaskell-logo.png"/>
 </p> 
 
 MyTaskell, is a command-line tool works as a task manager enables users to manage their 
